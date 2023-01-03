@@ -1,6 +1,6 @@
-# Interneting Is Hard - CSS Box Model
+# Interneting Is Hard - Web Typography
 
-This is a solution to the [CSS Box Model tutorial No. 5 of HTML & CSS Is Hard](https://www.internetingishard.com/html-and-css/css-box-model/).
+This is a solution to the [Web Typography tutorial No. 14 of HTML & CSS Is Hard](https://www.internetingishard.com/html-and-css/web-typography/).
 
 ## Table of contents
 
@@ -19,12 +19,17 @@ This is a solution to the [CSS Box Model tutorial No. 5 of HTML & CSS Is Hard](h
 
 ### Screenshots
 
-![](./screenshot.jpg)
+![Web Typography screenshot](./screenshots/web-typography.png)
+![History screenshot](./screenshots/history.png)
+![Indents screenshot](./screenshots/indents.png)
+![Alignment screenshot](./screenshots/alignment.png)
+![Spacing screenshot](./screenshots/spacing.png)
+![Line Length screenshot](./screenshots/line-length.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Web Typography solution](https://github.com/jugglingdev/web-typography)
+- Live Site URL: [Web Typography live site](https://jugglingdev.github.io/web-typography/)
 
 ## My process
 
