@@ -40,28 +40,37 @@ This is a solution to the [Web Typography tutorial No. 14 of HTML & CSS Is Hard]
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This tutorial started with a brief history of web fonts, which was helpful.  The web went from roughly a dozen web safe fonts to custom web fonts with 4 different file formats (.svg, .eot, .ttf, and .woff) to standardized .woff and .woff2 fonts.
 
-To see how you can add code snippets, see below:
+Next, this tutorial covered the two ways to add web fonts to a site:  locally or externally.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+For a locally hosted web font, you download a web font from a site like [Font Squirrel](https://www.fontsquirrel.com/) and add it to your project.  Then, you embed the font at the top of your stylesheet as in this code:
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+@font-face {
+  font-family: "Roboto"
+  src: url("Roboto-Light-webfont.woff") format("woff");
 }
 ```
+Now that the font is embedded, you can apply it to your site in the stylesheet!
+
+
+
+*Font Families and Font Faces*
+
+*Put Externally Hosted Web Fonts above previous section*
+
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Use
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Bulletproof @font-face Syntax](https://www.paulirish.com/2009/bulletproof-font-face-implementation-syntax/) - Great resource for @font-face definitions.
+- [Font Squirrel](https://www.fontsquirrel.com/) - Free fonts for commerical use.  Big selection with some good fonts to dig for.
+- [Google Fonts](https://fonts.google.com/) - Another resource for good quality free fonts.
+- [Fontspring](https://www.fontspring.com/) - For projects with a bigger budget, Fontspring is worth looking at.  Huge selection of excellent fonts.
 
 ## Author
 
