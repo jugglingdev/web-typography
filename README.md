@@ -54,16 +54,55 @@ For a locally hosted web font, you download a web font from a site like [Font Sq
 ```
 Now that the font is embedded, you can apply it to your site in the stylesheet!
 
+When working with fonts, it's important to remember:
+* Font families are made up of multiple font faces
+* Font faces have are categorized by weight and style
+* Weight has a spectrum of 100 to 900 (thin, extra light, light, regular, medium, semi bold, bold, extra bold, and black)
+* Style includes roman, italic, condensed, and condensed italic
+* When using `@font-face` rules, show the relationship between font faces by labeling the `font-family` the broad family name and then specifying the `font-style` and `font-weight` for each face under its at-rule 
 
+```css
+/* This makes your CSS more intuitive than changing the font-family value for related faces */
 
-*Font Families and Font Faces*
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Light-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
 
-*Put Externally Hosted Web Fonts above previous section*
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-LightItalic-webfont.woff") format("woff");
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* ... Then set the default font */
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+em {
+  font-style: italic;
+}
+```
+
+That's that locally hosted way.  The second way to add web fonts to a site is external.  [Google Fonts](https://fonts.google.com/) takes out the steps of adding .woff files and using `@font-face` rules.  With this method, we add a `<link>` with an `href` to the font URL as a stylesheet in the head of the page's HTML.  This is much more simple, though most professional sites use locally hosted web fonts for more flexibility.
+
+A few other notes include:
+* Use `text-align` OR `margin-bottom` for paragraph indents (never both or you will be judged)
+* Use the `:first-of-type pseudo-class` to leave off the indention of the first paragraph after a heading
+* Use `text-align` to change the default `left` value to `right`, `center`, or `justify` as needed
+* Use `line-height` (leading) to set the space between lines of the same paragraph
+* Use `max-width` to set the max line length to about 80 characters
 
 
 ### Continued development
 
-Use
+The biggest thing I can do to improve my skills is to apply what I've learned about typography to websites I've designed from scratch and start working with a bunch of designers.  Looking forward to it!
 
 ### Useful resources
 
@@ -71,6 +110,7 @@ Use
 - [Font Squirrel](https://www.fontsquirrel.com/) - Free fonts for commerical use.  Big selection with some good fonts to dig for.
 - [Google Fonts](https://fonts.google.com/) - Another resource for good quality free fonts.
 - [Fontspring](https://www.fontspring.com/) - For projects with a bigger budget, Fontspring is worth looking at.  Huge selection of excellent fonts.
+- [Practical Typography](https://practicaltypography.com/summary-of-key-rules.html) - Summary of key rules of typography.
 
 ## Author
 
